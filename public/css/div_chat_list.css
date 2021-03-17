@@ -1,0 +1,9 @@
+#div_chat_list {
+  width: 50%;
+  height: 50vh;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: white;
+  display: none;
+  text-align: center;
+}
