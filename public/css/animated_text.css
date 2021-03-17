@@ -1,0 +1,13 @@
+.animated-text {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: lightskyblue;
+  margin-top: -10px;
+}
+
+.animated-text .letter {
+  display: inline-block;
+  line-height: 1em;
+}
