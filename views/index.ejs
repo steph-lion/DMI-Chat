@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<script src="https://kit.fontawesome.com/4726b61960.js" crossorigin="anonymous"></script> <!--E' come un token per usare FontAwesome-->
+	<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+	<link href="animated_css.css" rel="stylesheet">
+    <link href="button_start.css" rel="stylesheet">
+</head>
+<body>
+	<div class="banner-text">
+		
+		<h2>DMI Chat</h2>
+        <div style="text-align: center;">
+			<button class="button-start" id="join">
+				Join a room
+				<i class="fas fa-comments fa-fw"></i>
+			</button>
+		</div>
+	</div>
+	<div class="animation-area">
+		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
