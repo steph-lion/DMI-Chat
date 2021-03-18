@@ -3,9 +3,9 @@
 	<meta charset="UTF-8">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!--Script per far muovere la scritta animata-->
 	<script src="https://kit.fontawesome.com/4726b61960.js" crossorigin="anonymous"></script> <!--E' come un token per usare FontAwesome-->
-	<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
-	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css"> <!--Import di tutte le icone di FontAwesome-->
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"> <!--Import di bootstrap-->
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet"> <!--Font da internet-->
 	<link href="css/animated_background.css" rel="stylesheet">
     <link href="css/button_start.css" rel="stylesheet">
 	<link href="css/animated_text.css" rel="stylesheet">
@@ -18,11 +18,12 @@
 			<li><a target="_blank" href="https://www.facebook.com/stefano.lyon/"><i class="fab fa-facebook fa-fw"></i>Facebook</a></li>
 			<li><a target="_blank" href="https://github.com/steph-lion/DMI-Chat"><i class="fab fa-github fa-fw"></i>GitHub</a></li>
 		</ul>
-		<h2>DMI Chat</h2>
-		<h4 style="text-align: center;" class="animated-text">Web programming project</h4>
+		<h2 id="dmi_chat">DMI Chat &nbsp;<i class="fas fa-comments fa-fw"></i></h2>
+		<h3 id="developed_by_me">Developed by Stefano Leone</h3>
+		<h4 style="text-align: center;" class="animated-text" id="anim_text">Web programming project</h4>
         <div style="text-align: center;">
 			<button class="button-start" id="join">
-				<h3>Join a room &nbsp;<i class="fas fa-comments fa-fw"></i></h3> <!--Carattere dello spazio. fa-fw mette anche uno spazio-->
+				<h3>Join a room</h3> <!--Carattere dello spazio. fa-fw mette anche uno spazio-->
 			</button>
 		</div>
 		<center><div id="div_chat_list">Jhonny Cock</div></center>
@@ -41,6 +42,6 @@
     <script src="/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
     <script src="script/chat.js"></script>
-	<script src="script/animated_text.js"></script>
+	<script src="script/animations.js"></script>
 </body>
 </html>

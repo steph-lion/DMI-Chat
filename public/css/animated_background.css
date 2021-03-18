@@ -12,6 +12,13 @@ a {
 a:hover {
   color: orange;
 }
+#developed_by_me{
+  display: none;
+  margin-left: 2%;
+  margin-top: -1%;
+  font-style: italic;
+  color: lightskyblue;
+}
 .banner-text {
   width: 100%;
   position: absolute;
@@ -26,7 +33,7 @@ a:hover {
   padding: 40px 15px;
   text-transform: uppercase;
   color: #fff;
-  font-size: 20px;
+  font-size: 20px; /*1vw per il "responsive" */
 }
 .banner-text ul li:hover {
   cursor: pointer;
