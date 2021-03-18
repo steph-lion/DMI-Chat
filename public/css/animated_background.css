@@ -17,7 +17,7 @@ a:hover {
   margin-left: 2%;
   margin-top: -1%;
   font-style: italic;
-  color: lightskyblue;
+  color: darkgreen;
 }
 .banner-text {
   width: 100%;
@@ -114,4 +114,16 @@ a:hover {
     transform: translateY(-800px) rotate(360deg);
     opacity: 0;
   }
+}
+.glow {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
 }
