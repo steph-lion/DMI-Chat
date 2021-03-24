@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> <!--Script per far muovere la scritta animata-->
 	<script src="https://kit.fontawesome.com/4726b61960.js" crossorigin="anonymous"></script> <!--E' come un token per usare FontAwesome-->
 	<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css"> <!--Import di tutte le icone di FontAwesome-->
-	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"> <!--Import di bootstrap-->
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> <!--Import di bootstrap-->
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet"> <!--Font da internet-->
+	
+	<!--I miei css-->
 	<link href="css/animated_background.css" rel="stylesheet">
     <link href="css/button_start.css" rel="stylesheet">
 	<link href="css/animated_text.css" rel="stylesheet">
 	<link href="css/div_chat_list.css" rel="stylesheet">
 	<link href="css/all.css" rel="stylesheet">
+
 </head>
 <body>
 	<div class="banner-text noselect">
@@ -31,7 +35,14 @@
 			<div id="div_chat_list">
 				<p style="font-size: 2vw;">SELECT A ROOM</p>
 				<hr style="border-style: solid;">
-				<div style="border: 1px solid; position: absolute; bottom: 2%; width: 100%;">Dio merda</div>
+				<div class = "username-plus-button">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+						<div class="input-group-append">
+						  <button class="btn btn-outline-secondary" type="button">Button</button>
+						</div>
+					</div>
+				</div>
 				
 			</div>
 		</center>
@@ -47,7 +58,7 @@
 		</ul>
 	</div>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+	<script src="/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
     <script src="script/chat.js"></script>
 	<script src="script/animations.js"></script>

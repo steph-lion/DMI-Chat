@@ -12,6 +12,11 @@
   a:hover {
     color: orange;
   }
+  .username-plus-button{
+    position: absolute; /*Per attaccare il div in basso */
+    bottom: 2%; 
+    width: 100%;
+  }
   #developed_by_me{
     display: none;
     margin-left: 2%;
@@ -19,9 +24,7 @@
     font-style: italic;
     color: darkgreen;
   }
-  .rooms{
-      opacity: 0.9;
-  }
+
   .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
