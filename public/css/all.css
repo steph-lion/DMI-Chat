@@ -17,6 +17,21 @@
     bottom: 2%; 
     width: 100%;
   }
+  .room-button{
+    width: 50%;
+    height: 20%;
+    border-radius: 10px;
+    margin: 20px;
+    outline: none;
+  }
+  #box_containing_rooms{
+    height: 35vh; 
+    overflow: auto;
+  }
+  #box_containing_username{
+    height: 8vh;
+    line-height: 8vh; /*Per centrare verticalmente */
+  }
   #developed_by_me{
     display: none;
     margin-left: 2%;

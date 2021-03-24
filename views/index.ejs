@@ -27,7 +27,7 @@
 		<h3 id="developed_by_me" class="glow">Developed by Stefano Leone</h3>
 		<h4 style="text-align: center;" class="animated-text" id="anim_text">Web programming project</h4>
         <div style="text-align: center;">
-			<button class="button-start" id="join">
+			<button class="button-start" id="join" onclick="fillRooms()">
 				<h3>Join the club!</h3> <!--Carattere dello spazio. fa-fw mette anche uno spazio-->
 			</button>
 		</div>
@@ -35,13 +35,10 @@
 			<div id="div_chat_list">
 				<p style="font-size: 2vw;">SELECT A ROOM</p>
 				<hr style="border-style: solid;">
-				<div class = "username-plus-button">
-					<div class="input-group mb-3">
-						<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-						<div class="input-group-append">
-						  <button class="btn btn-outline-secondary" type="button">Button</button>
-						</div>
-					</div>
+				<div id="box_containing_rooms"></div> <!-- Qui dentro verranno inserite le rooms-->
+				<div id="box_containing_username">
+					<hr style="border-style: solid;">
+					<input type="text" placeholder="Username...">
 				</div>
 				
 			</div>
