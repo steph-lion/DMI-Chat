@@ -32,4 +32,13 @@ $("#join").on("click", function () {
     });
     $("#anim_text").fadeOut("slow");
   });
+  menuSelect();
 });
+function showRoomList(){
+  $("#box_menu").fadeOut("slow",function(){
+    $("#menu_title").html("SELECT A ROOM");
+    $("#create_button").remove();
+    $("#join_button").remove();
+    fillRooms();
+  });
+};

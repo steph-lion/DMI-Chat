@@ -13,6 +13,7 @@
     <link href="css/button_start.css" rel="stylesheet">
 	<link href="css/animated_text.css" rel="stylesheet">
 	<link href="css/div_chat_list.css" rel="stylesheet">
+	<link href="css/room_button.css" rel="stylesheet">
 	<link href="css/all.css" rel="stylesheet">
 
 </head>
@@ -27,21 +28,21 @@
 		<h3 id="developed_by_me" class="glow">Developed by Stefano Leone</h3>
 		<h4 style="text-align: center;" class="animated-text" id="anim_text">Web programming project</h4>
         <div style="text-align: center;">
-			<button class="button-start" id="join" onclick="fillRooms()">
+			<button class="button-start" id="join" onclick="setup()">
 				<h3>Join the club!</h3> <!--Carattere dello spazio. fa-fw mette anche uno spazio-->
 			</button>
 		</div>
 		<center>
 			<div id="div_chat_list">
-				<p style="font-size: 2vw;">SELECT A ROOM</p>
+				<p id="menu_title" style="font-size: 2vw;">CHOOSE AN OPTION</p>
 				<hr style="border-style: solid;">
-				<div id="box_containing_rooms"></div> <!-- Qui dentro verranno inserite le rooms-->
+				<div id="middle_box"></div> <!-- Qui dentro verranno inserite le rooms-->
 				<div id="box_containing_username">
 					<hr style="border-style: solid;">
 					<input type="text" placeholder="Username...">
 				</div>
-				
 			</div>
+			<button id="back_button">Go Back</button>
 		</center>
 	</div>
 	<div class="animation-area">
