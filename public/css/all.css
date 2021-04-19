@@ -17,7 +17,7 @@
     bottom: 2%; 
     width: 100%;
   }
-  .room-buttons{
+  .room-button{
     width: 50%;
     height: 20%;
     border-radius: 10px;
@@ -38,6 +38,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .user_icon{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: 1px solid #ccc;
+    padding: 13px;
+    background: dodgerblue;
+    color: white;
+    min-width: 40px;
+  }
+  .input-field {
+    display: inline-block;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    text-align: center;
+    min-width: 20vw;
+    border: 1px solid #ccc;
+    padding: 13px;
+    outline: none;
+  }
+  .input-field:focus {
+    border: 2px solid dodgerblue;
   }
   #back_button{
     display: none;

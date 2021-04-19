@@ -1,11 +1,11 @@
-.room-buttons {
+.menu_buttons {
     margin: 20px auto;
     border: none;
     padding: 10px 44px;
     font-size: 36px;
     position: relative;
   }
-  .room-buttons::before {
+  .menu_buttons::before {
     transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     content: "";
     width: 50%;
@@ -15,27 +15,27 @@
     top: 0;
     left: 0;
   }
-  .room-buttons .room-buttons-text {
+  .menu_buttons .menu_buttons-text {
     color: white;
     mix-blend-mode: difference;
   }
-  .room-buttons:hover::before {
+  .menu_buttons:hover::before {
     background: black;
     width: 100%;
   }
-  .room-buttons.rounded {
+  .menu_buttons.rounded {
     border-radius: 50px;
   }
-  .room-buttons.rounded .text-green {
+  .menu_buttons.rounded .text-green {
     color: #00F0B5;
     mix-blend-mode: difference;
   }
-  .room-buttons.rounded::before {
+  .menu_buttons.rounded::before {
     border-radius: 50px;
     width: 25%;
     background: #00F0B5;
   }
-  .room-buttons.rounded:hover::before {
+  .menu_buttons.rounded:hover::before {
     background: #00F0B5;
     width: 100%;
   }
