@@ -45,7 +45,7 @@ function fillRooms(){
   var i;
   $("#middle_box").append("<div id='box_containing_rooms'>");
   for (i=1;i<6;i++){
-   $("#box_containing_rooms").append("<button class='menu_buttons room-button'><span>Room "+i+"</span></button><br>");
+   $("#box_containing_rooms").append("<button id='room_"+i+"' class='menu_buttons room-button' onclick=connectToRoom(this.id)><span>Room "+i+"</span><span style='margin-left:10%;'><i class='fa fa-user'></i></span><span style='color:green;'> 1/4</span></button><br>");
   }
   $("#middle_box").append("</div>");
   $("#back_button").fadeIn("slow");

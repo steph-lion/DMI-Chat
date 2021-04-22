@@ -3,21 +3,21 @@ const express=require("express");
 const app=express();
 const hostname = '127.0.0.1';
 const PORT = 3000;
-
 const server = http.createServer(app);
-
 const io=require("socket.io") (server);
+var num_rooms=0;
 
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
 
 io.on('connection',function(socket){
-  console.log("Nuova connessione socket aperta");
-  socket.emit("message","Avaia mbare");
-  socket.on('message', function(message){
-    console.log(message);
-  });
+  console.log("Nuova connessione socket aperta con "+socket.id);
+  socket.on("roomID",(roomID)=>{
+    socket.join(roomID);
+    console.log(socket.rooms)
+  })
+  
 });
 
 app.get('/',function(req,res){

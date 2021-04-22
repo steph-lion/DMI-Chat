@@ -12,9 +12,9 @@
 	 transition: all 0.1s ease-in-out;
 }
  .menu_buttons span {
+	 font-size: 2vw;
 	 line-height: 50%;
 	 font-family: "Montserrat", sans-serif;
-	 font-size: 32px;
 	 font-weight: semibold;
 }
  .menu_buttons{
