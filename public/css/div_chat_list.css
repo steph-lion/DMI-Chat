@@ -4,8 +4,8 @@
   height: 60vh;
   border-style: solid;
   border-radius: 20px;
-  opacity: 0.6;
-  background-color: lightblue;
+  opacity: 1;
+  background: #f3f0f1;
   display: none;
   position: relative;
 }

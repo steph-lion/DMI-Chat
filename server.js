@@ -14,6 +14,7 @@ app.use(express.static('public'));
 
 io.on('connection',function(socket){
   console.log("Nuova connessione socket aperta");
+  socket.emit("message","Avaia mbare");
   socket.on('message', function(message){
     console.log(message);
   });

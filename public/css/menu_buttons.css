@@ -1,41 +1,32 @@
-.menu_buttons {
-    margin: 20px auto;
-    border: none;
-    padding: 10px 44px;
-    font-size: 36px;
-    position: relative;
-  }
-  .menu_buttons::before {
-    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    content: "";
-    width: 50%;
-    height: 100%;
-    background: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .menu_buttons .menu_buttons-text {
-    color: white;
-    mix-blend-mode: difference;
-  }
-  .menu_buttons:hover::before {
-    background: black;
-    width: 100%;
-  }
-  .menu_buttons.rounded {
-    border-radius: 50px;
-  }
-  .menu_buttons.rounded .text-green {
-    color: #00F0B5;
-    mix-blend-mode: difference;
-  }
-  .menu_buttons.rounded::before {
-    border-radius: 50px;
-    width: 25%;
-    background: #00F0B5;
-  }
-  .menu_buttons.rounded:hover::before {
-    background: #00F0B5;
-    width: 100%;
-  }
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+  .menu_buttons {
+	 width: 50%;
+	 height: 20%;
+	 background: #f3f0f1;
+	 position: relative;
+	 background: #f3f0f1;
+	 margin-bottom: 25px;
+	 border-radius: 32px;
+	 text-align: center;
+	 cursor: pointer;
+	 transition: all 0.1s ease-in-out;
+}
+ .menu_buttons span {
+	 line-height: 50%;
+	 font-family: "Montserrat", sans-serif;
+	 font-size: 32px;
+	 font-weight: semibold;
+}
+ .menu_buttons{
+	 box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+	 color: #6f6cde;
+}
+ .menu_buttons:hover {
+	 opacity: 0.3;
+	 box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+ .menu_buttons:active {
+	 opacity: 1;
+	 box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+	 color: #79e3b6;
+}
