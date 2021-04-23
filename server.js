@@ -8,8 +8,11 @@ const io=require("socket.io") (server);
 var num_rooms=0;
 
 app.set('view engine', 'ejs');
-
 app.use(express.static('public'));
+
+function get_num_rooms(){
+  return num_rooms;
+}
 
 io.on('connection',function(socket){
   console.log("Nuova connessione socket aperta con "+socket.id);
