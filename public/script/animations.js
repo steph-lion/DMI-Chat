@@ -36,7 +36,8 @@ $("#join").on("click", function () {
 });
 function showRoomList(){
   $("#box_menu").fadeOut("slow",function(){
-    $("#menu_title").html("SELECT A ROOM");
+    $("#menu_title").html("SELECT A ROOM ")
+    $(".title-div").append("<button onclick=setRooms()><i class='fas fa-sync-alt fa-2x'></i></button>");
     $("#box_menu").remove();
     fillRooms();
   });

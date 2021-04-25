@@ -52,6 +52,26 @@
     padding: 13px;
     outline: none;
   }
+  .title-div{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .title-div button{
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translate(-50%,-50%);
+    border: 1px solid;
+    border-radius: 50%;
+    color: white;
+    background-color: dodgerblue;
+  }
+  .title-div button:active{
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  }
   .input-field:focus {
     border: 2px solid dodgerblue;
   }
