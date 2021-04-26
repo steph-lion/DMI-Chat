@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 html,body{
     padding: 0;
     margin: 0;
+    font-family: 'Ubuntu';
 }
 body{
     height: 100vh;
-    background:linear-gradient(to left,#be6d73,#c44932);
+    background: linear-gradient(45deg, #57003f 0%,#f57453 100%);
 }
 .main-div, .gray-bar{
     border-top-left-radius: 15px;
@@ -23,23 +25,100 @@ body{
     border: 1px solid #634857;
 }
 .gray-bar{
-    top: -1px;
-    left: -1px;
     width: 100%;
     position: relative;
     height: 10%;
     background-color: #464540;
 }
-.red-x{
+.red{
     width: 1vw;
     height: 1vw;
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 95%;
     transform: translate(-50%,-50%);
     background-color: #e04f1e;
-    padding: 1%;
-    text-align: center;
-    line-height: 1vw;
-    border-radius: 100%;
+    border-radius: 50%;
+}
+
+.yellow{
+    width: 1vw;
+    height: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 91%;
+    transform: translate(-50%,-50%);
+    background-color: yellow;
+    border-radius: 50%;
+}
+.green{
+    width: 1vw;
+    height: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    transform: translate(-50%,-50%);
+    background-color: green;
+    border-radius: 50%;
+}
+.title-bar{
+    color: #d1d5d2;
+    font-size: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.prompt{
+    display: flex;
+    width: 100%;
+}
+.welcome-text{
+    display: inline-block;
+    margin: 1%;
+}
+.green-text{
+    margin: 1%;
+    color: #87d441;
+}
+.tilde{
+    color: #6d85a9;
+}
+.dollar{
+    color: #ddd;
+}
+.text-area{
+    float: left;
+    display: block;
+    margin: 1%;
+    float: initial;
+    box-sizing: border-box;
+}
+.cursor{
+    margin-left: 8px;
+    width: 8px;
+    height: 19px;
+    background: white;
+    display: block;
+    animation: 1000ms ease infinite alternate blink;
+}
+.tilde, .dollar, .cursor{
+    margin-top: 1%;
+}
+.red:hover{
+    background-color: rgba(255,0,0,0.5);
+}
+.yellow:hover{
+    background-color: rgba(255,255,0,0.5);
+}
+.green:hover{
+    background-color: rgba(0,255,0,0.4);
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
