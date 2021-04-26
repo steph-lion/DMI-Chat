@@ -75,6 +75,26 @@
   .input-field:focus {
     border: 2px solid dodgerblue;
   }
+  .users-count{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+  }
+  .room-name{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+  }
+  .vertical-hr{
+    position: absolute;
+    border: none;
+    top: 0;
+    left: 65%;
+    height: 100%;
+    border-left: 1px solid black;
+  }
   #back_button{
     cursor: pointer;
     display: none;

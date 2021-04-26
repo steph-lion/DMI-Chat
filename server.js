@@ -1,13 +1,14 @@
 const http = require("http");
 const express=require("express");
+const log=require("ee-log");
 const app=express();
 const hostname = '127.0.0.1';
 const PORT = 3000;
 const server = http.createServer(app);
 const io=require("socket.io") (server);
 
-var num_rooms=0; //Numero di stanze disponibili
-var numClients={}; //Numero di client per ogni stanza
+var num_rooms=3; //Numero di stanze disponibili
+var numClients=[]; //Numero di client per ogni stanza
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
