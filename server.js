@@ -6,8 +6,8 @@ const PORT = 3000;
 const server = http.createServer(app);
 const io=require("socket.io") (server);
 
-var num_rooms=2;
-var numClients={};
+var num_rooms=0; //Numero di stanze disponibili
+var numClients={}; //Numero di client per ogni stanza
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
