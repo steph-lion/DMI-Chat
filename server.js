@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const io=require("socket.io") (server);
 
 var num_rooms=3; //Numero di stanze disponibili
-var numClients=[]; //Numero di client per ogni stanza
+var numClients=[];//Numero di client per ogni stanza
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -54,9 +54,16 @@ app.get('/',function(req,res){
 app.get('/numrooms', function(req, res) {
   res.status(200).send(get_num_rooms().toString());
 });
-app.get('/clientsinroom', function(req, res) {
-  res.send(get_clients_in_room());
+app.get('/clientsinroom:roomID', function(req, res) {
+  res.status(200).send(get_clients_in_room(req.params.roomID).toString());
 });
+app.get('/checkroomname:roomID', function(req,res){
+  var room=req.params.roomID;
+  if (numClients[room]!=undefined){
+    res.status(200).send('Yes');
+  }
+  else res.status(200).send('No');
+})
 /*app.get('/prova', function(req,res){
   let name="Stefano";
   res.render('prova.ejs', {name: name});

@@ -15,7 +15,6 @@ function setRooms(){
         }
         $("#box_containing_rooms").html(null);
         for (i=0;i<num_rooms;i++){
-            //Fissare il nome stanza al centro e partecipanti fisso a destra
             $("#box_containing_rooms").append("<button id='room_"+(i+1)+"' class='menu_buttons room-button' onclick=connectToRoom(this.id)><span class='room-name'>Room "+(i+1)+"</span><hr class='vertical-hr'><div class='users-count'><span><i class='fa fa-user'></i></span><span style='color:green;'> 1/4</span></div></button><br>");
         }
     });
