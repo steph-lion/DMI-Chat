@@ -88,14 +88,15 @@ body{
     color: #ddd;
 }
 .text-area{
-    float: left;
-    display: block;
+    width: 1ch;
     margin: 1%;
-    float: initial;
+    border: none;
+    color: #ddd;
+    background: transparent;
     box-sizing: border-box;
 }
 .cursor{
-    margin-left: 8px;
+    margin-left: -16px;
     width: 8px;
     height: 19px;
     background: white;
@@ -104,6 +105,10 @@ body{
 }
 .tilde, .dollar, .cursor{
     margin-top: 1%;
+}
+.text-area:focus{
+    outline: none;
+    caret-color: transparent;
 }
 .red:hover{
     background-color: rgba(255,0,0,0.5);

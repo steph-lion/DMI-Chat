@@ -16,8 +16,11 @@
                 <div class="green"></div>
             </div>
             <div class='prompt'>
-                <span class="green-text">stefano@ubuntu: </span><span class="tilde">~</span><span class="dollar">$</span><span class="cursor"></span>
-                <!-- <textarea class="text-area"></textarea> -->
+                <span class="green-text">stefano@ubuntu: </span>
+                <span class="tilde">~</span>
+                <span class="dollar">$</span>
+                <input class="text-area" type="text" onkeypress="this.style.width = this.value.length + 'ch'">
+                <span class="cursor"></span>
             </div>
         </div>
 </body>
